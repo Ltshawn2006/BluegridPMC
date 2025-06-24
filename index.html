@@ -25,12 +25,26 @@
       font-style: italic;
       color: #ccc;
     }
+    nav {
+      background-color: #0a1722;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav a {
+      color: #59a4db;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
     section {
       padding: 2rem;
       max-width: 900px;
       margin: auto;
     }
-    .services, .why-choose {
+    .services, .why-choose, .about, .founder {
       margin-bottom: 2rem;
     }
     h2 {
@@ -66,12 +80,23 @@
     <p>"Precision Beneath. Power Beyond."</p>
   </header>
 
-  <section>
+  <nav>
+    <a href="#intro">Home</a>
+    <a href="#services">Services</a>
+    <a href="#why">Why Choose Us</a>
+    <a href="#about">About BlueGrid</a>
+    <a href="#founder">Founder</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="intro">
     <div class="intro">
       <h2>Elite Underwater Operations</h2>
       <p>From deep-sea recovery to covert infiltration, BlueGrid's Diving Unit executes with unmatched precision and stealth. Our team is composed of tier-1 veterans equipped with the latest in underwater tactical technology.</p>
     </div>
+  </section>
 
+  <section id="services">
     <div class="services">
       <h2>Services Include</h2>
       <ul>
@@ -82,7 +107,9 @@
         <li>Subsurface Surveillance</li>
       </ul>
     </div>
+  </section>
 
+  <section id="why">
     <div class="why-choose">
       <h2>Why Choose BlueGrid?</h2>
       <ul>
@@ -94,7 +121,21 @@
     </div>
   </section>
 
-  <footer>
+  <section id="about">
+    <div class="about">
+      <h2>About BlueGrid PMC</h2>
+      <p>BlueGrid PMC is a privately held paramilitary corporation specializing in maritime and subsurface tactical operations. Our mission is to offer reliable, rapid-response capability for clients across the globe — whether it's defense, recovery, or reconnaissance. Operating with discipline, experience, and innovation, BlueGrid is trusted by governments, private sectors, and international agencies alike.</p>
+    </div>
+  </section>
+
+  <section id="founder">
+    <div class="founder">
+      <h2>Founder</h2>
+      <p><strong>Shawn Patrick Snedaker</strong>, an elite military diver and operations strategist, founded BlueGrid PMC after serving in high-stakes missions across five continents. His vision: to build a company that merges special operations expertise with private sector efficiency. Under his leadership, BlueGrid has grown into a precision-driven force known for integrity, versatility, and mission success.</p>
+    </div>
+  </section>
+
+  <footer id="contact">
     <p>Contact: <a href="mailto:ops@bluegridpmc.com">ops@bluegridpmc.com</a> | <a href="http://www.bluegridpmc.com">www.bluegridpmc.com</a><br>
     &copy; 2025 BlueGrid PMC Group. All rights reserved.</p>
   </footer>
